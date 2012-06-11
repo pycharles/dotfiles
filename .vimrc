@@ -23,4 +23,6 @@ let g:miniBufExplMapWindowNavArrows = 1
 let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1 
 
-
+"make home key go to first non-whitespace
+:map <Home> ^
+:imap <Home> <Esc>^i
