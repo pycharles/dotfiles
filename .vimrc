@@ -24,5 +24,13 @@ let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1 
 
 "make home key go to first non-whitespace
-:map <Home> ^
-:imap <Home> <Esc>^i
+map <Home> ^
+imap <Home> <Esc>^i
+
+
+"Easier mapleader than the default "\"
+let mapleader = ","
+" type ,p to insert breakpoint ...   is inserted by ctrl v and then esc
+nnoremap <leader>p oimport ipdb;ipdb.set_trace()
+" make W key 'wipe' the whole line clean but keep the \n
+nnoremap <leader>W 0d$
