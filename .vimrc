@@ -30,7 +30,8 @@ imap <Home> <Esc>^i
 
 "Easier mapleader than the default "\"
 let mapleader = ","
-" type ,p to insert breakpoint ...   is inserted by ctrl v and then esc
+" type ,p to insert breakpoint.  is at the end.  Insert with ctrl v and then esc 
+" (the github web gui doesn't display control characters, but it is there)
 nnoremap <leader>p oimport ipdb;ipdb.set_trace()
 " make W key 'wipe' the whole line clean but keep the \n
 nnoremap <leader>W 0d$
